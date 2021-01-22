@@ -16,77 +16,54 @@
   </head>
 
   <body>
+    <nav class="relative-nav">
+      <ul>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">AMAs</a></li>
+        <li><a href="#">Spaces</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="sticky-nav">
+      <ul>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Hard Fork</a> </li>
+        <li><a href="#">Plugged</a></li>
+        <li><a href="#">Readme</a></li>
+        <li><a href="#">Growth Quarters</a></li>
+        <li><a href="#">Shift</a></li>
+        <li><a href="#">Neural</a></li>
+      </ul>
+      <button class="search">
+        <i class="fas fa-search"></i>
+      </button>
+    </nav>
+
     <main>
-      <nav class="relative-nav">
-        <ul>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">AMAs</a></li>
-          <li><a href="#">Spaces</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Advertise</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
-      <nav class="sticky-nav">
-        <ul>
-          <li><a href="#">Latest</a></li>
-          <li><a href="#">Hard Fork</a> </li>
-          <li><a href="#">Plugged</a></li>
-          <li><a href="#">Readme</a></li>
-          <li><a href="#">Growth Quarters</a></li>
-          <li><a href="#">Shift</a></li>
-          <li><a href="#">Neural</a></li>
-        </ul>
-        <button class="search">
-          <i class="fas fa-search"></i>
-        </button>
-      </nav>
-
       <div class="fixed-handicap"></div>
 
-      <section class="top-stories">
-        <article class="cover-story">
-          <div class="cover-logo">asdf</div>
-          <time>Saturday — January 16, 2021</time>
-          <header class="bottom-header">
-            <h5 class="cover-section"><a href="#">Tech</a></h5>
-            <h2 class="cover-title">
-              <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
-            </h2>
-            <ul>
-              by 
-              <a href="#">Thomas Macaulay</a>
-            </li>
-            <li>
-              <i class="far fa-clock"></i>
-              5 hours ago
-            </li>
-            <li>
-              <i class="fas fa-share-alt"></i>
-              19
-            </li>
-            </ul>
-          </header>
-        </article>
-        <article>
-          <header class="bottom-header">
-            <h5 class="cover-section"><a href="#">Tech</a></h5>
-            <h2 class="cover-title">
-              <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
-            </h2>
-            <ul>
-              <li>
+      <section class="top-stories section">
+          <article class="cover-story background-image">
+            <div class="cover-logo">logo</div>
+            <time>Saturday — January 16, 2021</time>
+            <header class="bottom-header">
+              <h5 class="cover-section"><a href="#">Tech</a></h5>
+              <h2 class="cover-title">
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
+              </h2>
+              <ul>
                 by 
                 <a href="#">Thomas Macaulay</a>
-                <time></time>
               </li>
               <li>
                 <i class="far fa-clock"></i>
@@ -96,804 +73,835 @@
                 <i class="fas fa-share-alt"></i>
                 19
               </li>
+              </ul>
+            </header>
+          </article>
+          <article class="background-image">
+            <header class="bottom-header">
+              <h5 class="cover-section"><a href="#">Tech</a></h5>
+              <h2 class="cover-title">
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
+              </h2>
+              <ul>
+                <li>
+                  by 
+                  <a href="#">Thomas Macaulay</a>
+                  <time></time>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i>
+                  5 hours ago
+                </li>
+                <li>
+                  <i class="fas fa-share-alt"></i>
+                  19
+                </li>
+              </ul>
+            </header>
+          </article>
+          <article class="background-image">
+            <header  class="bottom-header">
+              <h5 class="cover-section"><a href="#">Tech</a></h5>
+              <h2 class="cover-title">
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
+              </h2>
+              <ul>
+                <li>
+                  by 
+                  <a href="#">Thomas Macaulay</a>
+                  <time></time>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i>
+                  5 hours ago
+                </li>
+                <li>
+                  <i class="fas fa-share-alt"></i>
+                  19
+                </li>
+              </ul>
+            </header>
+          </article>
+      </section>
+
+      <div class="div-wrapper">
+        <section class="latest-news section">
+          <header>
+            <h2 class="orange-heading">
+              <a href="#">Latest news</a>
+            </h2>
+          </header>
+          <ul class="grid grid-col-4">
+            <li>
+              <a href="#" class="background-image"></a>
+              <h4>
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+              </h4>
+              <ul class="meta">
+                <li><a href="#">Thomas Macaulay</a></li>
+                <li><time>4 days ago</time></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="background-image"></a>
+              <h4>
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+              </h4>
+              <ul class="meta">
+                <li><a href="#">Thomas Macaulay</a></li>
+                <li><time>4 days ago</time></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="background-image"></a>
+              <h4>
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+              </h4>
+              <ul class="meta">
+                <li><a href="#">Thomas Macaulay</a></li>
+                <li><time>4 days ago</time></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="background-image"></a>
+              <h4>
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+              </h4>
+              <ul class="meta">
+                <li><a href="#">Thomas Macaulay</a></li>
+                <li><time>4 days ago</time></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="background-image"></a>
+              <h4>
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+              </h4>
+              <ul class="meta">
+                <li><a href="#">Thomas Macaulay</a></li>
+                <li><time>4 days ago</time></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="background-image"></a>
+              <h4>
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+              </h4>
+              <ul class="meta">
+                <li><a href="#">Thomas Macaulay</a></li>
+                <li><time>4 days ago</time></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="background-image"></a>
+              <h4>
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+              </h4>
+              <ul class="meta">
+                <li><a href="#">Thomas Macaulay</a></li>
+                <li><time>4 days ago</time></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="background-image"></a>
+              <h4>
+                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+              </h4>
+              <ul class="meta">
+                <li><a href="#">Thomas Macaulay</a></li>
+                <li><time>4 days ago</time></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="index-co section">
+          <header class="flex-row justify-between align-center">
+            <h2 class="orange-heading">
+              <a href="#">Latest funding rounds on Index.co</a>
+            </h2>
+            <ul class="orange-additional">
+              <li>
+                <a href="">Add Info</a>
+              </li>
+              <li>
+                <a href="">Get updates by email</a>
+              </li>
+              <li>
+                <a href="">See more</a>
+              </li>
             </ul>
           </header>
-        </article>
-        <article>
-          <header  class="bottom-header">
-            <h5 class="cover-section"><a href="#">Tech</a></h5>
-            <h2 class="cover-title">
-              <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
-            </h2>
+
+          <ul class="grid grid-col-4">
+            <li class="card">
+              <header>
+                <img src="./images/image.png" alt="">
+                <h4 class="top">
+                  <a href="#">Starburst Data</a>
+                </h4>
+
+                <h4 class="bottom">
+                  <a href="#">
+                    $100M
+                    <div>SERIES C</div>
+                  </a>
+                </h4>
+              </header>
+
+              <div class="card-info">
+                <a href="#">
+                  <i class="fas fa-tag"></i>
+                  <span>Open Source, +2</span>
+                </a>
+                <a href="#">
+                  <i class="fas fa-toolbox"></i>
+                  <span>Open Source, +2</span>
+                </a>
+              </div>
+
+              <div class="card-story">
+                <a href="#">
+                  Starburst Data raises $100M to give enterprise analytics projects a speed boost on 
+                  <span>SiliconANGLE</span>
+                </a>
+              </div>
+            </li>
+            <li class="card">
+              <header>
+                <img src="./images/image.png" alt="">
+                <h4 class="top">
+                  <a href="#">Starburst Data</a>
+                </h4>
+
+                <h4 class="bottom">
+                  <a href="#">
+                    $100M
+                    <div>SERIES C</div>
+                  </a>
+                </h4>
+              </header>
+
+              <div class="card-info">
+                <a href="#">
+                  <i class="fas fa-tag"></i>
+                  <span>Open Source, +2</span>
+                </a>
+                <a href="#">
+                  <i class="fas fa-toolbox"></i>
+                  <span>Open Source, +2</span>
+                </a>
+              </div>
+
+              <div class="card-story">
+                <a href="#">
+                  Starburst Data raises $100M to give enterprise analytics projects a speed boost on 
+                  <span>SiliconANGLE</span>
+                </a>
+              </div>
+            </li>
+            <li class="card">
+              <header>
+                <img src="./images/image.png" alt="">
+                <h4 class="top">
+                  <a href="#">Starburst Data</a>
+                </h4>
+
+                <h4 class="bottom">
+                  <a href="#">
+                    $100M
+                    <div>SERIES C</div>
+                  </a>
+                </h4>
+              </header>
+
+              <div class="card-info">
+                <a href="#">
+                  <i class="fas fa-tag"></i>
+                  <span>Open Source, +2</span>
+                </a>
+                <a href="#">
+                  <i class="fas fa-toolbox"></i>
+                  <span>Open Source, +2</span>
+                </a>
+              </div>
+
+              <div class="card-story">
+                <a href="#">
+                  Starburst Data raises $100M to give enterprise analytics projects a speed boost on 
+                  <span>SiliconANGLE</span>
+                </a>
+              </div>
+            </li>
+            <li class="card">
+              <header>
+                <img src="./images/image.png" alt="">
+                <h4 class="top">
+                  <a href="#">Starburst Data</a>
+                </h4>
+
+                <h4 class="bottom">
+                  <a href="#">
+                    $100M
+                    <div>SERIES C</div>
+                  </a>
+                </h4>
+              </header>
+
+              <div class="card-info">
+                <a href="#">
+                  <i class="fas fa-tag"></i>
+                  <span>Open Source, +2</span>
+                </a>
+                <a href="#">
+                  <i class="fas fa-toolbox"></i>
+                  <span>Open Source, +2</span>
+                </a>
+              </div>
+
+              <div class="card-story">
+                <a href="#">
+                  Starburst Data raises $100M to give enterprise analytics projects a speed boost on 
+                  <span>SiliconANGLE</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="categories grid grid-col-3 grid-row-3">
+          <section class="category">
             <ul>
               <li>
-                by 
-                <a href="#">Thomas Macaulay</a>
-                <time></time>
+                <h2 class="mv-1">
+                  <a href="#" class="orange-font">Hard Fork</a>
+                </h2>
+                <article>
+                  <a href="#" class="image background-image flex-column justify-end">
+                    <header class="m-1">
+                      <div class="pv-1">MOST POPULAR</div>
+                      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid eius doloribus.</h5>
+                      <div class="pv-1 font-12 gray-font">
+                        <span>David Canellis</span>
+                        <time>21 days ago</time>
+                      </div>
+                    </header>
+                  </a>
+                </article>
               </li>
-              <li>
-                <i class="far fa-clock"></i>
-                5 hours ago
+
+              <li class="latest flex-row">
+                <header class="orange-font p-1 flex-column latest__header">
+                  <h5 class="pv-1 font-14 thin-font uppercase ubuntu">Latest</h5>
+                  <a href="#" class="font-14"><h4 >CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4></a>
+                </header>
+                <a href="#"><img src="images/jacky.jpg" alt="" class="latest__image"></a>
               </li>
-              <li>
-                <i class="fas fa-share-alt"></i>
-                19
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
               </li>
             </ul>
-          </header>
-        </article>
-      </section>
+          </section>
+          <section class="category">
+            <ul>
+              <li>
+                <h2 class="mv-1">
+                  <a href="#" class="orange-font">Hard Fork</a>
+                </h2>
+                <article>
+                  <a href="#" class="image background-image flex-column justify-end">
+                    <header class="m-1">
+                      <div class="pv-1">MOST POPULAR</div>
+                      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid eius doloribus.</h5>
+                      <div class="pv-1 font-12 gray-font">
+                        <span>David Canellis</span>
+                        <time>21 days ago</time>
+                      </div>
+                    </header>
+                  </a>
+                </article>
+              </li>
 
-      <section class="latest-news">
-        <header>
-          <h2></h2>
-        </header>
-        <div class="grid">
-          <ul>
-            <li>
-              <a href=""></a>
-              <h4>
-                <a href=""></a>
-              </h4>
-              <ul>
-                <li>Thomas Macaulay</li>
-                <li><time></time></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""></a>
-              <h4>
-                <a href=""></a>
-              </h4>
-              <ul>
-                <li>Thomas Macaulay</li>
-                <li><time></time></li>
-              </ul>
-            </li>            <li>
-              <a href=""></a>
-              <h4>
-                <a href=""></a>
-              </h4>
-              <ul>
-                <li>Thomas Macaulay</li>
-                <li><time></time></li>
-              </ul>
-            </li>            <li>
-              <a href=""></a>
-              <h4>
-                <a href=""></a>
-              </h4>
-              <ul>
-                <li>Thomas Macaulay</li>
-                <li><time></time></li>
-              </ul>
-            </li>            <li>
-              <a href=""></a>
-              <h4>
-                <a href=""></a>
-              </h4>
-              <ul>
-                <li>Thomas Macaulay</li>
-                <li><time></time></li>
-              </ul>
-            </li>            <li>
-              <a href=""></a>
-              <h4>
-                <a href=""></a>
-              </h4>
-              <ul>
-                <li>Thomas Macaulay</li>
-                <li><time></time></li>
-              </ul>
-            </li>            <li>
-              <a href=""></a>
-              <h4>
-                <a href=""></a>
-              </h4>
-              <ul>
-                <li>Thomas Macaulay</li>
-                <li><time></time></li>
-              </ul>
-            </li>            <li>
-              <a href=""></a>
-              <h4>
-                <a href=""></a>
-              </h4>
-              <ul>
-                <li>Thomas Macaulay</li>
-                <li><time></time></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="index-co">
-        <header>
-          <h2>Latest funding rounds on Index.co</h2>
-          <ul>
-            <li>
-              <a href="">Add Info</a>
-            </li>
-            <li>
-              <a href="">Get updates by email</a>
-            </li>
-            <li>
-              <a href="">See more</a>
-            </li>
-          </ul>
-        </header>
-
-        <ul>
-          <li>
-            <a href="#">
-              <img src="#" alt="">
-              <h4>Starburst Data</h4>
-              <div>
-                <h4>$100M</h4>
-                <h5>SERIES C</h5>
-              </div>
-            </a>
-            
-            <div>
-              <a href="#">
-                <i></i>
-                <span>Open Source, +2</span>
-              </a>
-              <a href="#">
-                <i></i>
-                <span>Open Source, +2</span>
-              </a>
-            </div>
-            <a href="#">
-              Starburst Data raises $100M to give enterprise analytics projects a speed boost on 
-              <span>SiliconANGLE</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="#" alt="">
-              <h4>Starburst Data</h4>
-              <div>
-                <h4>$100M</h4>
-                <h5>SERIES C</h5>
-              </div>
-            </a>
-            
-            <div>
-              <a href="#">
-                <i></i>
-                <span>Open Source, +2</span>
-              </a>
-              <a href="#">
-                <i></i>
-                <span>Open Source, +2</span>
-              </a>
-            </div>
-            <a href="#">
-              Starburst Data raises $100M to give enterprise analytics projects a speed boost on 
-              <span>SiliconANGLE</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="#" alt="">
-              <h4>Starburst Data</h4>
-              <div>
-                <h4>$100M</h4>
-                <h5>SERIES C</h5>
-              </div>
-            </a>
-            
-            <div>
-              <a href="#">
-                <i></i>
-                <span>Open Source, +2</span>
-              </a>
-              <a href="#">
-                <i></i>
-                <span>Open Source, +2</span>
-              </a>
-            </div>
-            <a href="#">
-              Starburst Data raises $100M to give enterprise analytics projects a speed boost on 
-              <span>SiliconANGLE</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="#" alt="">
-              <h4>Starburst Data</h4>
-              <div>
-                <h4>$100M</h4>
-                <h5>SERIES C</h5>
-              </div>
-            </a>
-            
-            <div>
-              <a href="#">
-                <i></i>
-                <span>Open Source, +2</span>
-              </a>
-              <a href="#">
-                <i></i>
-                <span>Open Source, +2</span>
-              </a>
-            </div>
-            <a href="#">
-              Starburst Data raises $100M to give enterprise analytics projects a speed boost on 
-              <span>SiliconANGLE</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="categories">
-        <section class="category">
-          <ul>
-            <li class="most-popular">
-              <h2><a href="">Hard Fork</a></h2>
-              <article>
-                <a href="">
-                </a>
-                <header>
-                  <h5>Most Popular</h5>
-                  <h3>Winklevoss comes out of meditation to witness Bitcoin's record high</h3>
-                  <span>
-                    David Canellis
-                    <time>21 days ago</time>
-                  </span>
+              <li class="latest flex-row">
+                <header class="orange-font p-1 flex-column latest__header">
+                  <h5 class="pv-1 font-14 thin-font uppercase ubuntu">Latest</h5>
+                  <a href="#" class="font-14"><h4 >CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4></a>
                 </header>
-              </article>
-            </li>
+                <a href="#"><img src="images/jacky.jpg" alt="" class="latest__image"></a>
+              </li>
 
-            <li class="latest">
-              <header>
-                <h5>Latest</h5>
-                <h4>CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4>
-              </header>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="category">
-          <ul>
-            <li class="most-popular">
-              <h2><a href="">Hard Fork</a></h2>
-              <article>
-                <a href="">
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
                 </a>
-                <header>
-                  <h5>Most Popular</h5>
-                  <h3>Winklevoss comes out of meditation to witness Bitcoin's record high</h3>
-                  <span>
-                    David Canellis
-                    <time>21 days ago</time>
-                  </span>
-                </header>
-              </article>
-            </li>
+              </li>
 
-            <li class="latest">
-              <header>
-                <h5>Latest</h5>
-                <h4>CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4>
-              </header>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="category">
-          <ul>
-            <li class="most-popular">
-              <h2><a href="">Hard Fork</a></h2>
-              <article>
-                <a href="">
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
                 </a>
-                <header>
-                  <h5>Most Popular</h5>
-                  <h3>Winklevoss comes out of meditation to witness Bitcoin's record high</h3>
-                  <span>
-                    David Canellis
-                    <time>21 days ago</time>
-                  </span>
-                </header>
-              </article>
-            </li>
+              </li>
 
-            <li class="latest">
-              <header>
-                <h5>Latest</h5>
-                <h4>CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4>
-              </header>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="category">
-          <ul>
-            <li class="most-popular">
-              <h2><a href="">Hard Fork</a></h2>
-              <article>
-                <a href="">
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
                 </a>
-                <header>
-                  <h5>Most Popular</h5>
-                  <h3>Winklevoss comes out of meditation to witness Bitcoin's record high</h3>
-                  <span>
-                    David Canellis
-                    <time>21 days ago</time>
-                  </span>
-                </header>
-              </article>
-            </li>
+              </li>
 
-            <li class="latest">
-              <header>
-                <h5>Latest</h5>
-                <h4>CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4>
-              </header>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="category">
-          <ul>
-            <li class="most-popular">
-              <h2><a href="">Hard Fork</a></h2>
-              <article>
-                <a href="">
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
                 </a>
-                <header>
-                  <h5>Most Popular</h5>
-                  <h3>Winklevoss comes out of meditation to witness Bitcoin's record high</h3>
-                  <span>
-                    David Canellis
-                    <time>21 days ago</time>
-                  </span>
-                </header>
-              </article>
-            </li>
+              </li>
 
-            <li class="latest">
-              <header>
-                <h5>Latest</h5>
-                <h4>CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4>
-              </header>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="category">
-          <ul>
-            <li class="most-popular">
-              <h2><a href="">Hard Fork</a></h2>
-              <article>
-                <a href="">
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
                 </a>
-                <header>
-                  <h5>Most Popular</h5>
-                  <h3>Winklevoss comes out of meditation to witness Bitcoin's record high</h3>
-                  <span>
-                    David Canellis
-                    <time>21 days ago</time>
-                  </span>
+              </li>
+            </ul>
+          </section>
+          <section class="category">
+            <ul>
+              <li>
+                <h2 class="mv-1">
+                  <a href="#" class="orange-font">Hard Fork</a>
+                </h2>
+                <article>
+                  <a href="#" class="image background-image flex-column justify-end">
+                    <header class="m-1">
+                      <div class="pv-1">MOST POPULAR</div>
+                      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid eius doloribus.</h5>
+                      <div class="pv-1 font-12 gray-font">
+                        <span>David Canellis</span>
+                        <time>21 days ago</time>
+                      </div>
+                    </header>
+                  </a>
+                </article>
+              </li>
+
+              <li class="latest flex-row">
+                <header class="orange-font p-1 flex-column latest__header">
+                  <h5 class="pv-1 font-14 thin-font uppercase ubuntu">Latest</h5>
+                  <a href="#" class="font-14"><h4 >CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4></a>
                 </header>
-              </article>
-            </li>
+                <a href="#"><img src="images/jacky.jpg" alt="" class="latest__image"></a>
+              </li>
 
-            <li class="latest">
-              <header>
-                <h5>Latest</h5>
-                <h4>CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4>
-              </header>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="category">
-          <ul>
-            <li class="most-popular">
-              <h2><a href="">Hard Fork</a></h2>
-              <article>
-                <a href="">
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
                 </a>
-                <header>
-                  <h5>Most Popular</h5>
-                  <h3>Winklevoss comes out of meditation to witness Bitcoin's record high</h3>
-                  <span>
-                    David Canellis
-                    <time>21 days ago</time>
-                  </span>
-                </header>
-              </article>
-            </li>
+              </li>
 
-            <li class="latest">
-              <header>
-                <h5>Latest</h5>
-                <h4>CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4>
-              </header>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="category">
-          <ul>
-            <li class="most-popular">
-              <h2><a href="">Hard Fork</a></h2>
-              <article>
-                <a href="">
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
                 </a>
-                <header>
-                  <h5>Most Popular</h5>
-                  <h3>Winklevoss comes out of meditation to witness Bitcoin's record high</h3>
-                  <span>
-                    David Canellis
-                    <time>21 days ago</time>
-                  </span>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="category">
+            <ul>
+              <li>
+                <h2 class="mv-1">
+                  <a href="#" class="orange-font">Hard Fork</a>
+                </h2>
+                <article>
+                  <a href="#" class="image background-image flex-column justify-end">
+                    <header class="m-1">
+                      <div class="pv-1">MOST POPULAR</div>
+                      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid eius doloribus.</h5>
+                      <div class="pv-1 font-12 gray-font">
+                        <span>David Canellis</span>
+                        <time>21 days ago</time>
+                      </div>
+                    </header>
+                  </a>
+                </article>
+              </li>
+
+              <li class="latest flex-row">
+                <header class="orange-font p-1 flex-column latest__header">
+                  <h5 class="pv-1 font-14 thin-font uppercase ubuntu">Latest</h5>
+                  <a href="#" class="font-14"><h4 >CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4></a>
                 </header>
-              </article>
-            </li>
+                <a href="#"><img src="images/jacky.jpg" alt="" class="latest__image"></a>
+              </li>
 
-            <li class="latest">
-              <header>
-                <h5>Latest</h5>
-                <h4>CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4>
-              </header>
-            </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
 
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
 
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
 
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
 
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="category">
+            <ul>
+              <li>
+                <h2 class="mv-1">
+                  <a href="#" class="orange-font">Hard Fork</a>
+                </h2>
+                <article>
+                  <a href="#" class="image background-image flex-column justify-end">
+                    <header class="m-1">
+                      <div class="pv-1">MOST POPULAR</div>
+                      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid eius doloribus.</h5>
+                      <div class="pv-1 font-12 gray-font">
+                        <span>David Canellis</span>
+                        <time>21 days ago</time>
+                      </div>
+                    </header>
+                  </a>
+                </article>
+              </li>
 
-            <li class="headline">
-              <a href="#">
-                CD Projekt stock down 20% since Cyberpunk reviews hit the internet
-              </a>
-            </li>
-          </ul>
-        </section>
-      </section>
+              <li class="latest flex-row">
+                <header class="orange-font p-1 flex-column latest__header">
+                  <h5 class="pv-1 font-14 thin-font uppercase ubuntu">Latest</h5>
+                  <a href="#" class="font-14"><h4 >CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4></a>
+                </header>
+                <a href="#"><img src="images/jacky.jpg" alt="" class="latest__image"></a>
+              </li>
 
-      <section class="latest-deals">
-        <h2>Latest Deals</h2>
-        <ul>
-          <li>
-            <a href="#">
-              <div class="yellow-corner">
-                <div class="discount-percent">99% off</div>
-              </div>
-            </a>
-            <h4>The Premium 2021 Project & Quality management Certification Bundle</h4>
-            <div>
-              <span class="old-price">$4400</span>
-              <span class="new-price">$45.99</span>
-            </div>
-          </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <div class="yellow-corner">
-                <div class="discount-percent">99% off</div>
-              </div>
-            </a>
-            <h4>The Premium 2021 Project & Quality management Certification Bundle</h4>
-            <div>
-              <span class="old-price">$4400</span>
-              <span class="new-price">$45.99</span>
-            </div>
-          </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <div class="yellow-corner">
-                <div class="discount-percent">99% off</div>
-              </div>
-            </a>
-            <h4>The Premium 2021 Project & Quality management Certification Bundle</h4>
-            <div>
-              <span class="old-price">$4400</span>
-              <span class="new-price">$45.99</span>
-            </div>
-          </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <div class="yellow-corner">
-                <div class="discount-percent">99% off</div>
-              </div>
-            </a>
-            <h4>The Premium 2021 Project & Quality management Certification Bundle</h4>
-            <div>
-              <span class="old-price">$4400</span>
-              <span class="new-price">$45.99</span>
-            </div>
-          </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <div class="yellow-corner">
-                <div class="discount-percent">99% off</div>
-              </div>
-            </a>
-            <h4>The Premium 2021 Project & Quality management Certification Bundle</h4>
-            <div>
-              <span class="old-price">$4400</span>
-              <span class="new-price">$45.99</span>
-            </div>
-          </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="category">
+            <ul>
+              <li>
+                <h2 class="mv-1">
+                  <a href="#" class="orange-font">Hard Fork</a>
+                </h2>
+                <article>
+                  <a href="#" class="image background-image flex-column justify-end">
+                    <header class="m-1">
+                      <div class="pv-1">MOST POPULAR</div>
+                      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid eius doloribus.</h5>
+                      <div class="pv-1 font-12 gray-font">
+                        <span>David Canellis</span>
+                        <time>21 days ago</time>
+                      </div>
+                    </header>
+                  </a>
+                </article>
+              </li>
 
-          <li>
-            <a href="#">
-              <div class="yellow-corner">
-                <div class="discount-percent">99% off</div>
-              </div>
-            </a>
-            <h4>The Premium 2021 Project & Quality management Certification Bundle</h4>
-            <div>
-              <span class="old-price">$4400</span>
-              <span class="new-price">$45.99</span>
-            </div>
-          </li>
+              <li class="latest flex-row">
+                <header class="orange-font p-1 flex-column latest__header">
+                  <h5 class="pv-1 font-14 thin-font uppercase ubuntu">Latest</h5>
+                  <a href="#" class="font-14"><h4 >CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4></a>
+                </header>
+                <a href="#"><img src="images/jacky.jpg" alt="" class="latest__image"></a>
+              </li>
 
-          <li>
-            <a href="#">
-              <div class="yellow-corner">
-                <div class="discount-percent">99% off</div>
-              </div>
-            </a>
-            <h4>The Premium 2021 Project & Quality management Certification Bundle</h4>
-            <div>
-              <span class="old-price">$4400</span>
-              <span class="new-price">$45.99</span>
-            </div>
-          </li>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <div class="yellow-corner">
-                <div class="discount-percent">99% off</div>
-              </div>
-            </a>
-            <h4>The Premium 2021 Project & Quality management Certification Bundle</h4>
-            <div>
-              <span class="old-price">$4400</span>
-              <span class="new-price">$45.99</span>
-            </div>
-          </li>
-        </ul>
-      </section>
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="category">
+            <ul>
+              <li>
+                <h2 class="mv-1">
+                  <a href="#" class="orange-font">Hard Fork</a>
+                </h2>
+                <article>
+                  <a href="#" class="image background-image flex-column justify-end">
+                    <header class="m-1">
+                      <div class="pv-1">MOST POPULAR</div>
+                      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid eius doloribus.</h5>
+                      <div class="pv-1 font-12 gray-font">
+                        <span>David Canellis</span>
+                        <time>21 days ago</time>
+                      </div>
+                    </header>
+                  </a>
+                </article>
+              </li>
+
+              <li class="latest flex-row">
+                <header class="orange-font p-1 flex-column latest__header">
+                  <h5 class="pv-1 font-14 thin-font uppercase ubuntu">Latest</h5>
+                  <a href="#" class="font-14"><h4 >CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4></a>
+                </header>
+                <a href="#"><img src="images/jacky.jpg" alt="" class="latest__image"></a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="category">
+            <ul>
+              <li>
+                <h2 class="mv-1">
+                  <a href="#" class="orange-font">Hard Fork</a>
+                </h2>
+                <article>
+                  <a href="#" class="image background-image flex-column justify-end">
+                    <header class="m-1">
+                      <div class="pv-1">MOST POPULAR</div>
+                      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid eius doloribus.</h5>
+                      <div class="pv-1 font-12 gray-font">
+                        <span>David Canellis</span>
+                        <time>21 days ago</time>
+                      </div>
+                    </header>
+                  </a>
+                </article>
+              </li>
+
+              <li class="latest flex-row">
+                <header class="orange-font p-1 flex-column latest__header">
+                  <h5 class="pv-1 font-14 thin-font uppercase ubuntu">Latest</h5>
+                  <a href="#" class="font-14"><h4 >CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4></a>
+                </header>
+                <a href="#"><img src="images/jacky.jpg" alt="" class="latest__image"></a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="category">
+            <ul>
+              <li>
+                <h2 class="mv-1">
+                  <a href="#" class="orange-font">Hard Fork</a>
+                </h2>
+                <article>
+                  <a href="#" class="image background-image flex-column justify-end">
+                    <header class="m-1">
+                      <div class="pv-1">MOST POPULAR</div>
+                      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid eius doloribus.</h5>
+                      <div class="pv-1 font-12 gray-font">
+                        <span>David Canellis</span>
+                        <time>21 days ago</time>
+                      </div>
+                    </header>
+                  </a>
+                </article>
+              </li>
+
+              <li class="latest flex-row">
+                <header class="orange-font p-1 flex-column latest__header">
+                  <h5 class="pv-1 font-14 thin-font uppercase ubuntu">Latest</h5>
+                  <a href="#" class="font-14"><h4 >CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</h4></a>
+                </header>
+                <a href="#"><img src="images/jacky.jpg" alt="" class="latest__image"></a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+
+              <li class="headline font-12 dark-gray-font thin-font pv-1 border-bottom">
+                <a href="#" class="list">
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the internet
+                </a>
+              </li>
+            </ul>
+          </section>
+      </div>
     </main>
 
     <footer>
