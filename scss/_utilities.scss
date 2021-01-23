@@ -1,11 +1,15 @@
 $gray-font: #a0a0a0;
 $light-gray: #eeeeee;
 $dark-gray-font: #7e7e7e;
+$gray-button: #333333;
+$gray-black: #131313;
+$black: #000;
 $bg-image: url("/images/featured-e1561584989913-796x400.jpg");
 $orange: #f42;
 $light-peach: #fffaf8;
 $medium-light-peach: #fff0ed;
 $peach: #ffcdc2;
+$blue: #146ff8;
 
 .bottom-header {
   position: absolute;
@@ -49,10 +53,13 @@ $peach: #ffcdc2;
   grid-template-rows: repeat(3, 1fr);
 }
 
+.grid-row-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .grid-row-4 {
   grid-template-rows: repeat(4, 1fr);
 }
-
 
 // alignment
 
@@ -122,9 +129,17 @@ $peach: #ffcdc2;
   font-size: 14px;
 }
 
+.font-16 {
+  font-size-adjust: 16px;
+}
+
 .thin-font {
   font-weight: 200;
   line-height: 1.5;
+}
+
+.thick-font {
+  font-weight: 700;
 }
 
 .uppercase {
