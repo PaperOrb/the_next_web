@@ -43,21 +43,23 @@ nav a:hover {
   color: black;
 }
 
-.orange-additional {
-  display: flex;
-  color: $orange;
+.font-weight-400 {
   font-weight: 400;
-  font-size: 16px;
+}
+
+.line-height-18 {
   line-height: 18px;
 }
 
-.orange-additional a:hover {
+.add-info li a:hover {
   color: black;
 }
 
-.orange-additional > li:not(:last-child)::after {
-  content: "|";
-  margin: 0 10px;
+@media (min-width: 870px) {
+  .add-info > li:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px;
+  }
 }
 
 .div-wrapper {
@@ -66,7 +68,7 @@ nav a:hover {
   max-width: 1192px;
 }
 
-/* black nav */
+/* navigation */
 .relative-nav {
   display: flex;
   position: relative;
@@ -84,7 +86,6 @@ nav a:hover {
   align-items: center;
 }
 
-/* white sticky nav */
 .sticky-nav {
   display: flex;
   position: -webkit-sticky;
@@ -112,6 +113,10 @@ nav a:hover {
   color: #000;
 }
 
+.nav-right-container {
+  height: 100%;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -129,6 +134,14 @@ nav a:hover {
 
 .search i:hover {
   color: $dark-gray-font;
+}
+
+.tnw-logo {
+  display: none;
+}
+
+.hamburger {
+  display: none;
 }
 
 /* top stories */
@@ -149,8 +162,6 @@ nav a:hover {
 }
 
 .cover-story {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
   background-size: cover;
   height: 544px;
@@ -166,10 +177,9 @@ nav a:hover {
   position: absolute;
   top: 24px;
   left: 24px;
-  border: 1px solid red;
 }
 
-.cover-section a {
+.cover-section {
   font-family: "Ubuntu";
   line-height: 1.5rem;
   font-weight: 500;
@@ -177,16 +187,18 @@ nav a:hover {
   text-transform: uppercase;
 }
 
-.cover-title {
+.side-cover-title {
   line-height: 1.1;
   font-size: 28px;
   margin-bottom: 14px;
   margin-top: 5px;
 }
 
-.cover-story .cover-title {
+.cover-title {
   line-height: 56px;
   font-size: 56px;
+  margin-bottom: 14px;
+  margin-top: 5px;
 }
 
 .bottom-header li {
@@ -214,7 +226,7 @@ nav a:hover {
   height: 100%;
 }
 
-.latest-news .grid > li > a {
+.lg-bg {
   display: block;
   width: 100%;
   height: auto;
@@ -316,8 +328,6 @@ nav a:hover {
   width: 100%;
 }
 
-
-
 .deals__article {
   max-width: 100%;
 }
@@ -351,6 +361,7 @@ nav a:hover {
   border-radius: 50%;
   width: 45px;
   height: 45px;
+  z-index: 100;
 }
 
 .fixed-handicap > img {
@@ -434,7 +445,7 @@ nav a:hover {
 
 .footer-social-links__link:hover {
   background-color: #000;
-  border: 2px solid $gray-button
+  border: 2px solid $gray-button;
 }
 
 .link__icon {
@@ -445,7 +456,161 @@ nav a:hover {
 
 .footer-legal {
   width: 100%;
-  height: 100px;
+  height: 100%;
   padding: 40px;
   background-color: #000;
+}
+
+@media (max-width: 870px) {
+  // navigation
+  .cover-logo,
+  .cover-story__time,
+  .relative-nav,
+  .sticky-nav > ul {
+    display: none;
+  }
+
+  .tnw-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 120px;
+    height: 100%;
+  }
+
+  .tnw-logo > img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .hamburger {
+    display: flex;
+    width: 48px;
+    height: 100%;
+    border: 1px solid $light-gray;
+  }
+
+  .hamburger span {
+    background-color: $orange;
+    height: 2px;
+    width: 50%;
+    margin: 2px 0;
+  }
+
+  // top stories
+  .top-stories {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .top-stories > article {
+    grid-row: 0 / span 1;
+    height: 200px;
+  }
+
+  .cover-section {
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+  }
+
+  .cover-title,
+  .side-cover-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1rem;
+  }
+
+  // latest news
+
+  .sm-flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sm-flex-row {
+    display: flex;
+    height: 100px;
+  }
+
+  .sm-bg {
+    width: 75px;
+    height: 75px;
+    padding-bottom: 0%;
+    flex: 1;
+  }
+
+  .sm-margin-x-1 {
+    margin: 0 0.25rem;
+  }
+
+  .sm-margin-x-2 {
+    margin: 0 0.5rem;
+  }
+
+  .sm-margin-bottom-1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .sm-margin-bottom-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .sm-margin-bottom-3 {
+    margin-bottom: 2.5rem;
+  }
+
+  .sm-font-size-12 {
+    font-size: 14px;
+  }
+
+  .sm-font-size-14 {
+    font-size: 14px;
+  }
+
+  .sm-font-size-28 {
+    font-size: 28px;
+  }
+
+  .sm-line-height-18 {
+    line-height: 18px;
+  }
+
+  .sm-line-height-32 {
+    line-height: 32px;
+  }
+
+  .sm-font-ubuntu {
+    font-family: "Ubuntu";
+  }
+
+  .sm-font-weight-400 {
+    font-weight: 400;
+  }
+
+  .sm-font-weight-700 {
+    font-weight: 700;
+  }
+
+  .sm-justify-content-end {
+    justify-content: flex-end;
+  }
+
+  .sm-align-content-start {
+    align-items: flex-start;
+  }
+
+  .sm-align-content-end {
+    align-content: flex-end;
+  }
+
+  .sm-fixed-handicap {
+    bottom: 0px;
+    right: 10%;
+    border-radius: 0%;
+    width: 35px;
+    height: 35px;
+  }
 }

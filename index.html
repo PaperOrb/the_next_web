@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/tailwind.css">
     <title>Document</title>
   </head>
 
@@ -35,6 +36,9 @@
     </nav>
 
     <nav class="sticky-nav">
+      <div class="tnw-logo">
+        <img src="/images/tnw.svg" alt="">
+      </div>
       <ul>
         <li><a href="#">Latest</a></li>
         <li><a href="#">Hard Fork</a> </li>
@@ -44,28 +48,58 @@
         <li><a href="#">Shift</a></li>
         <li><a href="#">Neural</a></li>
       </ul>
-      <button class="search">
-        <i class="fas fa-search"></i>
-      </button>
+      <div class="nav-right-container flex flex-row">
+        <button class="search">
+          <i class="fas fa-search"></i>
+        </button>
+        <a href="#" class="hamburger flex flex-column justify-center align-center">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
     </nav>
 
     <main>
-      <div class="fixed-handicap">
+      <div class="fixed-handicap sm-fixed-handicap">
         <img src="/images/handicap.svg" alt="">
       </div>
 
       <section class="top-stories section">
-          <article class="cover-story background-image">
-            <div class="cover-logo">logo</div>
-            <time>Saturday — January 16, 2021</time>
-            <header class="bottom-header">
-              <h5 class="cover-section"><a href="#">Tech</a></h5>
-              <h2 class="cover-title">
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
-              </h2>
-              <ul>
+        <article class="cover-story background-image">
+          <div class="cover-logo">logo</div>
+          <time class="cover-story__time">Saturday — January 16, 2021</time>
+          <header class="bottom-header">
+            <h5><a href="#" class="cover-section">Tech</a></h5>
+            <h2 class="cover-title">
+              <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
+            </h2>
+            <ul>
+              by 
+              <a href="#">Thomas Macaulay</a>
+            </li>
+            <li>
+              <i class="far fa-clock"></i>
+              5 hours ago
+            </li>
+            <li>
+              <i class="fas fa-share-alt"></i>
+              19
+            </li>
+            </ul>
+          </header>
+        </article>
+        <article class="background-image">
+          <header class="bottom-header">
+            <h5 class="cover-section"><a href="#">Tech</a></h5>
+            <h2 class="side-cover-title">
+              <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
+            </h2>
+            <ul>
+              <li>
                 by 
                 <a href="#">Thomas Macaulay</a>
+                <time></time>
               </li>
               <li>
                 <i class="far fa-clock"></i>
@@ -75,55 +109,32 @@
                 <i class="fas fa-share-alt"></i>
                 19
               </li>
-              </ul>
-            </header>
-          </article>
-          <article class="background-image">
-            <header class="bottom-header">
-              <h5 class="cover-section"><a href="#">Tech</a></h5>
-              <h2 class="cover-title">
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
-              </h2>
-              <ul>
-                <li>
-                  by 
-                  <a href="#">Thomas Macaulay</a>
-                  <time></time>
-                </li>
-                <li>
-                  <i class="far fa-clock"></i>
-                  5 hours ago
-                </li>
-                <li>
-                  <i class="fas fa-share-alt"></i>
-                  19
-                </li>
-              </ul>
-            </header>
-          </article>
-          <article class="background-image">
-            <header  class="bottom-header">
-              <h5 class="cover-section"><a href="#">Tech</a></h5>
-              <h2 class="cover-title">
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
-              </h2>
-              <ul>
-                <li>
-                  by 
-                  <a href="#">Thomas Macaulay</a>
-                  <time></time>
-                </li>
-                <li>
-                  <i class="far fa-clock"></i>
-                  5 hours ago
-                </li>
-                <li>
-                  <i class="fas fa-share-alt"></i>
-                  19
-                </li>
-              </ul>
-            </header>
-          </article>
+            </ul>
+          </header>
+        </article>
+        <article class="background-image">
+          <header  class="bottom-header">
+            <h5 class="cover-section"><a href="#">Tech</a></h5>
+            <h2 class="side-cover-title">
+              <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam!</a>
+            </h2>
+            <ul>
+              <li>
+                by 
+                <a href="#">Thomas Macaulay</a>
+                <time></time>
+              </li>
+              <li>
+                <i class="far fa-clock"></i>
+                5 hours ago
+              </li>
+              <li>
+                <i class="fas fa-share-alt"></i>
+                19
+              </li>
+            </ul>
+          </header>
+        </article>
       </section>
 
       <div class="div-wrapper">
@@ -133,109 +144,142 @@
               <a href="#">Latest news</a>
             </h2>
           </header>
-          <ul class="grid grid-col-4">
-            <li>
-              <a href="#" class="background-image"></a>
-              <h4>
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
-              </h4>
-              <ul class="meta">
-                <li><a href="#">Thomas Macaulay</a></li>
-                <li><time>4 days ago</time></li>
-              </ul>
+          <ul class="grid grid-col-4 sm-flex-column">
+            <li class="sm-flex-row">
+              <div>
+                <a href="#" class="background-image sm-bg lg-bg"></a>
+              </div>
+              <div  class="sm-margin-x-2 sm-flex-column sm-font-size-14 sm-font-weight-400 sm-line-height-18">
+                <h4 class="sm-margin-bottom-1">
+                  <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+                </h4>
+                <ul class="meta sm-font-ubuntu">
+                  <li><a href="#">Thomas Macaulay</a></li>
+                  <li><time>4 days ago</time></li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#" class="background-image"></a>
-              <h4>
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
-              </h4>
-              <ul class="meta">
-                <li><a href="#">Thomas Macaulay</a></li>
-                <li><time>4 days ago</time></li>
-              </ul>
+
+            <li class="sm-flex-row">
+              <div>
+                <a href="#" class="background-image sm-bg lg-bg"></a>
+              </div>
+              <div  class="sm-margin-x-2 sm-flex-column sm-font-size-14 sm-font-weight-400 sm-line-height-18">
+                <h4 class="sm-margin-bottom-1">
+                  <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+                </h4>
+                <ul class="meta sm-font-ubuntu">
+                  <li><a href="#">Thomas Macaulay</a></li>
+                  <li><time>4 days ago</time></li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#" class="background-image"></a>
-              <h4>
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
-              </h4>
-              <ul class="meta">
-                <li><a href="#">Thomas Macaulay</a></li>
-                <li><time>4 days ago</time></li>
-              </ul>
+            <li class="sm-flex-row">
+              <div>
+                <a href="#" class="background-image sm-bg lg-bg"></a>
+              </div>
+              <div  class="sm-margin-x-2 sm-flex-column sm-font-size-14 sm-font-weight-400 sm-line-height-18">
+                <h4 class="sm-margin-bottom-1">
+                  <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+                </h4>
+                <ul class="meta sm-font-ubuntu">
+                  <li><a href="#">Thomas Macaulay</a></li>
+                  <li><time>4 days ago</time></li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#" class="background-image"></a>
-              <h4>
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
-              </h4>
-              <ul class="meta">
-                <li><a href="#">Thomas Macaulay</a></li>
-                <li><time>4 days ago</time></li>
-              </ul>
+            <li class="sm-flex-row">
+              <div>
+                <a href="#" class="background-image sm-bg lg-bg"></a>
+              </div>
+              <div  class="sm-margin-x-2 sm-flex-column sm-font-size-14 sm-font-weight-400 sm-line-height-18">
+                <h4 class="sm-margin-bottom-1">
+                  <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+                </h4>
+                <ul class="meta sm-font-ubuntu">
+                  <li><a href="#">Thomas Macaulay</a></li>
+                  <li><time>4 days ago</time></li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#" class="background-image"></a>
-              <h4>
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
-              </h4>
-              <ul class="meta">
-                <li><a href="#">Thomas Macaulay</a></li>
-                <li><time>4 days ago</time></li>
-              </ul>
+            <li class="sm-flex-row">
+              <div>
+                <a href="#" class="background-image sm-bg lg-bg"></a>
+              </div>
+              <div  class="sm-margin-x-2 sm-flex-column sm-font-size-14 sm-font-weight-400 sm-line-height-18">
+                <h4 class="sm-margin-bottom-1">
+                  <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+                </h4>
+                <ul class="meta sm-font-ubuntu">
+                  <li><a href="#">Thomas Macaulay</a></li>
+                  <li><time>4 days ago</time></li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#" class="background-image"></a>
-              <h4>
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
-              </h4>
-              <ul class="meta">
-                <li><a href="#">Thomas Macaulay</a></li>
-                <li><time>4 days ago</time></li>
-              </ul>
+            <li class="sm-flex-row">
+              <div>
+                <a href="#" class="background-image sm-bg lg-bg"></a>
+              </div>
+              <div  class="sm-margin-x-2 sm-flex-column sm-font-size-14 sm-font-weight-400 sm-line-height-18">
+                <h4 class="sm-margin-bottom-1">
+                  <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+                </h4>
+                <ul class="meta sm-font-ubuntu">
+                  <li><a href="#">Thomas Macaulay</a></li>
+                  <li><time>4 days ago</time></li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#" class="background-image"></a>
-              <h4>
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
-              </h4>
-              <ul class="meta">
-                <li><a href="#">Thomas Macaulay</a></li>
-                <li><time>4 days ago</time></li>
-              </ul>
+            <li class="sm-flex-row">
+              <div>
+                <a href="#" class="background-image sm-bg lg-bg"></a>
+              </div>
+              <div  class="sm-margin-x-2 sm-flex-column sm-font-size-14 sm-font-weight-400 sm-line-height-18">
+                <h4 class="sm-margin-bottom-1">
+                  <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+                </h4>
+                <ul class="meta sm-font-ubuntu">
+                  <li><a href="#">Thomas Macaulay</a></li>
+                  <li><time>4 days ago</time></li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#" class="background-image"></a>
-              <h4>
-                <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
-              </h4>
-              <ul class="meta">
-                <li><a href="#">Thomas Macaulay</a></li>
-                <li><time>4 days ago</time></li>
-              </ul>
+            <li class="sm-flex-row">
+              <div>
+                <a href="#" class="background-image sm-bg lg-bg"></a>
+              </div>
+              <div  class="sm-margin-x-2 sm-flex-column sm-font-size-14 sm-font-weight-400 sm-line-height-18">
+                <h4 class="sm-margin-bottom-1">
+                  <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur cum quaerat impedit.</a>
+                </h4>
+                <ul class="meta sm-font-ubuntu">
+                  <li><a href="#">Thomas Macaulay</a></li>
+                  <li><time>4 days ago</time></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </section>
 
         <section class="index-co section">
-          <header class="flex-row justify-between align-center">
-            <h2 class="orange-heading">
+          <header class="sm-align-content-start flex-row justify-between align-center sm-flex-column">
+            <h2 class="orange-heading sm-margin-bottom-2">
               <a href="#">Latest funding rounds on Index.co</a>
             </h2>
-            <ul class="orange-additional">
-              <li>
+            <ul class="sm-justify-content-start add-info line-height-18 orange-font font-16 font-weight-400 flex-row sm-flex-column">
+              <li class="sm-margin-bottom-2">
                 <a href="">Add Info</a>
               </li>
-              <li>
+              <li class="sm-margin-bottom-2">
                 <a href="">Get updates by email</a>
               </li>
-              <li>
+              <li class="sm-margin-bottom-2">
                 <a href="">See more</a>
               </li>
             </ul>
           </header>
 
-          <ul class="grid grid-col-4">
+          <ul class="grid grid-col-4 sm-flex-column">
             <li class="card">
               <header>
                 <img src="./images/image.png" alt="">
@@ -371,7 +415,7 @@
           </ul>
         </section>
 
-        <section class="categories grid grid-col-3 grid-row-3 section">
+        <section class="categories grid grid-col-3 grid-row-3 section sm-flex-column">
           <section class="category">
             <ul>
               <li>
@@ -906,12 +950,12 @@
         </section>
 
         <section class="deals section">
-          <header class="orange-heading mv-2 flex-row justify-between align-center">
+          <header class="orange-heading mv-2 flex-row justify-between sm-align-content-start">
             <a href="#">Latest deals</a>
-            <a href="#" class="orange-additional">See all Deals</a>
+            <a href="#" class="orange-font sm-font-size-14">See all Deals</a>
           </header>
 
-          <ul class="deals__ul grid grid-col-4 grid-row-2">
+          <ul class="deals__ul grid grid-col-4 grid-row-2 sm-flex-column">
             <li>
               <article class="flex deals__article">
                 <a href="#" class="background-image deals__image mv-1">
@@ -1000,37 +1044,37 @@
     <footer>
       <div class="footer-links-wrapper">
         <ul class="footer-social-links flex flex-row justify-center">
-          <li class="m-1">
+          <li class="m-1 sm-margin-x-1">
             <a href="#" class="footer-social-links__link">
               <i class="fab fa-twitter link__icon"></i>
             </a>
           </li>
-          <li class="m-1">
+          <li class="m-1 sm-margin-x-1">
             <a href="#" class="footer-social-links__link">
               <i class="fab fa-twitter link__icon"></i>
             </a>
           </li>
-          <li class="m-1">
+          <li class="m-1 sm-margin-x-1">
             <a href="#" class="footer-social-links__link">
               <i class="fab fa-twitter link__icon"></i>
             </a>
           </li>
-          <li class="m-1">
+          <li class="m-1 sm-margin-x-1">
             <a href="#" class="footer-social-links__link">
               <i class="fab fa-twitter link__icon"></i>
             </a>
           </li>
-          <li class="m-1">
+          <li class="m-1 sm-margin-x-1">
             <a href="#" class="footer-social-links__link">
               <i class="fab fa-twitter link__icon"></i>
             </a>
           </li>
-          <li class="m-1">
+          <li class="m-1 sm-margin-x-1">
             <a href="#" class="footer-social-links__link">
               <i class="fab fa-twitter link__icon"></i>
             </a>
           </li>
-          <li class="m-1">
+          <li class="m-1 sm-margin-x-1">
             <a href="#" class="footer-social-links__link">
               <i class="fab fa-twitter link__icon"></i>
             </a>
@@ -1057,7 +1101,7 @@
       </div>
 
       <div class="footer-legal flex flex-row justify-center">
-        <div class="legal-wrapper gray-font font-14 ubuntu lh-20">
+        <div class="legal-wrapper gray-font font-14 ubuntu lh-20 sm-margin-bottom-3">
           <span>
             <a href="#"><img src="images/tnw.svg" alt="#" class="footer-tnw-svg"></a>
             © 2006–2021 The Next Web B.V.
